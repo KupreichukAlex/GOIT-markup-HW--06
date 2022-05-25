@@ -61,10 +61,67 @@
             <use  href="./images/sprite.svg#icon-close-btn" width="11" height="11"></use>
         </svg>
     </button>
+   
+        <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+        <div class="modal-form">
+            <form action="form js-users-form">
+                <div class="form-field">
+                    <label for="name" class="modal-form-label">Имя</label>
+    
+                    <input class="input" type="text" name="user-name" id="name" autocomplete="name">
+                    <span class="icon-form-sp">
+                        <svg class="icon-inputs">
+                            <use href="./images/sprite.svg#icon-user-modal-form"></use>
+                        </svg>
+                    </span>
+    
+                </div>
+    
+                <div class="form-field">
+                    <label for="tel" class="modal-form-label">Телефон</label>
+                    <input class="input" type="tel" name="user-tel" id="tel" autocomplete="tel">
+    
+                    <span class="icon-form-sp">
+                        <svg class="icon-inputs">
+                            <use href="./images/sprite.svg#icon-phone-modal-form"></use>
+                        </svg>
+                    </span>
+                </div>
+    
+                <div class="form-field">
+                    <label for="email" class="modal-form-label">Почта</label>
+                    <input class="input" type="email" name="user-email" id="email" autocomplete="email">
+    
+                    <span class="icon-form-sp">
+                        <svg class="icon-inputs">
+                            <use href="./images/sprite.svg#icon-envelope-modal-form"></use>
+                        </svg>
+                    </span>
+                </div>
+    
+                <div class="form-field-last">
+                    <label for="coments" class="modal-form-label">Коментарий</label>
+                    <textarea class="textarea" name="user-coments" id="coments" placeholder="Введите текст"></textarea>
+    
+                </div>
+    
+    
+    
+                <div class="modal-checkbox">
+                    
+                        <input class="form-checkbox visually-hidden " type="checkbox" name="agree-policy" value="agree" id="agree-policy"> 
+                        <label for="agree-policy" class="policy-box">Соглашаюсь с рассылкой и принимаю</label>
+                        <a href="#" class="modal-checkbox-link">Условия договора</a>
+                </div>
+                <button type="submit" class="modal-btn-submit">Отправить</button>
+            </form>
+        </div>
+        
+    </div>
     </div>
 </div>
 
-            </div>
+            
         </section>
 
         <section class="benefits">
@@ -323,8 +380,7 @@
 
             <ul class="list-contact-footer list">
                 <li class="contact-item-footer"><a class="link-footer-map link" href="https://goo.gl/maps/f1McvQRz6KP4o4kd8" target="_blank"
-                        rel="noopener noreferrer">г. Киев,
-                        пр-т Леси Украинки,26</a></li>
+                        rel="noopener noreferrer">г. Киев, пр-т Леси Украинки,26</a></li>
                 <li class="contact-item-footer"><a class="contact-link link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
                 <li class="contact-item-footer"><a class="contact-link link" href="tel:+380961111111">+38 096 111 11 11</a></li>
             </ul>
@@ -356,6 +412,28 @@
                         </a></li>
                 </ul>
             </div>
+
+            <div class="footer-item">
+                <p class="email-title">Подишитесь на рассылку</p>
+            
+                <div class="form-footer-div">
+                    <form action="form-footer js-users-form">
+                        
+                            <label for="email-footer" class="footer-form-label"></label>
+                            <input class="input-footer" type="email" name="user-email" id="email-footer" autocomplete="email"
+                                placeholder="E-mail">
+        
+                            <button class="button-footer" type="submit">Подписаться
+            
+                                <svg class="icon-button-footer">
+                                    <use href="./images/sprite.svg#icon-icon-send"></use>
+                                </svg>
+                            </button>
+                        
+                    </form>
+                </div>
+            </div>
+            
         
         </div>
             </footer>
